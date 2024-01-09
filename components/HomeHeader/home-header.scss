@@ -1,0 +1,11 @@
+#home-header-overlay {
+  background: linear-gradient(0deg, rgba(25, 27, 38, 0.32), rgba(25, 27, 38, 0.72));
+}
+
+.background {
+  img {
+    transform: translateX(-50%) translateY(-50%) scale(.1);
+    top: 50% !important;
+    left: 50% !important;
+  }
+}

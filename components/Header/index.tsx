@@ -5,7 +5,7 @@ import Button from '../UI/Button';
 
 const Header = () => {
   return (
-    <header className="fixed left-0 top-0 z-10 flex h-[64px] w-full justify-center border-b-[1px] border-solid border-bColor bg-white">
+    <header className="fixed left-0 top-0 z-20 flex h-[64px] w-full justify-center border-b-[1px] border-solid border-bColor bg-white">
       <div className="container mx-auto flex items-center	justify-between">
         <Link href={'/'}>
           <h1 className="text-4xl font-bold capitalize">pixaby</h1>

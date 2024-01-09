@@ -1,0 +1,7 @@
+.button-link {
+  &.active,
+  &:hover {
+    background: #f7f7f7;
+    color: #191b26;
+  }
+}
