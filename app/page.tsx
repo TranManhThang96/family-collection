@@ -13,8 +13,8 @@ interface IDataProps {
 }
 
 const getImages = async () => {
-  const res = await fetch('https://pixabay.com/api/?key=12019414-dc588011857cbc90733bf7a98', {
-    next: { revalidate: 3600 },
+  const res = await fetch(`https://pixabay.com/api/?key=${process.env.PIXABAY_KEY}`, {
+    next: { revalidate: 60 },
   });
   const data: IDataProps = await res.json();
   return data;
