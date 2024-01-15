@@ -1,11 +1,17 @@
 import { IImage } from '@/types/image';
+import Image from 'next/image';
 import React from 'react';
 
 const ImageItem = ({ image }: { image: IImage }) => {
   return (
-    <div>
-      <img src={image.webformatURL} className="h-auto w-full" />
-    </div>
+    <Image
+      src={image.webformatURL}
+      className="h-auto max-w-full rounded-lg"
+      alt={image.user}
+      layout="responsive"
+      width={250}
+      height={300}
+    />
   );
 };
 

@@ -57,9 +57,9 @@ export default async function HomePage() {
             </div>
           </section>
 
-          <section id="images-masonry" className="mt-10 grid grid-cols-[repeat(4,1fr)] gap-2.5">
+          <div className="mt-10">
             <MasonryGrid images={data.hits} />
-          </section>
+          </div>
         </section>
       </main>
     </>
